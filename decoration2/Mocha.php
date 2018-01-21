@@ -1,5 +1,4 @@
 <?php
-include "CondimentDecorate.php";
 /**
  * 
  */
@@ -15,7 +14,7 @@ class Mocha extends CondimentDecorate{
 	}
 
 	function getDescription(){
-		return $this->$beverage->getDescription()." ".$this->description;
+		return $this->beverage->getDescription()." ".$this->description;
 	}
 
 	function cost(){

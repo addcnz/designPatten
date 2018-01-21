@@ -1,17 +1,26 @@
 <?php
 
-// include "Decaf.php";
-// include "Milk.php";
+$pathinfo = pathinfo(__FILE__);
+$files = scandir($pathinfo['dirname']);
+foreach($files as $file){
+    if(!preg_match("/^.*\.php$/", $file) || $file==$pathinfo['basename']){
+        continue;
+    }
+    //echo $pathinfo['dirname']."/".$file."<br/>";
+    include $pathinfo['dirname']."/".$file;
+}
 
-// $drink = new Decaf();
 
+$drink = new Decaf();
 
-// $drink = new Milk($drink);
+$drink = new Milk($drink);
+//$drink = new Milk($drink);
+ $drink = new Whip($drink);
 
-// echo $drink->getDescription();
-// echo "<br/>";
-// echo $drink->cost();
-
+echo "您点了：".$drink->getDescription();
+echo "<br/>";
+echo "花费：".$drink->cost();
+die;
 // abstract class Component {
 //     abstract public function operation();
 // }

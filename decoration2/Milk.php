@@ -1,13 +1,12 @@
 <?php
-include "CondimentDecorate.php";
 /**
- * 
+ * 具体的装饰类 milk
  */
 class Milk extends CondimentDecorate{
 	/**
 	 * 饮料价格
 	 */
-	public $cost = 11;
+	public $cost = 3;
 	public $description = "牛奶";
 
 	function __construct(Beverage $beverage){
@@ -15,7 +14,8 @@ class Milk extends CondimentDecorate{
 	}
 
 	function getDescription(){
-		return $this->$beverage->getDescription()." ".$this->description;
+		echo "qiang";
+		return $this->beverage->getDescription()."+".$this->description;
 	}
 
 	function cost(){

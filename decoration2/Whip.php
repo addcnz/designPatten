@@ -1,5 +1,5 @@
 <?php
-include "CondimentDecorate.php";
+
 /**
  * 
  */
@@ -7,7 +7,7 @@ class Whip extends CondimentDecorate{
 	/**
 	 * 饮料价格
 	 */
-	public $cost = 11;
+	public $cost = 9;
 	public $description = "奶泡";
 
 	function __construct(Beverage $beverage){
@@ -15,7 +15,8 @@ class Whip extends CondimentDecorate{
 	}
 
 	function getDescription(){
-		return $this->$beverage->getDescription()." ".$this->description;
+		echo "z";
+		return $this->beverage->getDescription()."+".$this->description;
 	}
 
 	function cost(){

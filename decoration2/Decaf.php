@@ -1,5 +1,4 @@
 <?php
-include "Beverage.php";
 /**
  * 脱咖啡因咖啡，无咖啡因咖啡;
  */

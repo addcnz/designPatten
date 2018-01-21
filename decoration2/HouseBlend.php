@@ -1,5 +1,4 @@
 <?php
-include "Beverage.php";
 /**
  * 星巴克首选咖啡,一种饮料
  */
