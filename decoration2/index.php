@@ -17,7 +17,7 @@ $drink = new Milk($drink);
 //$drink = new Milk($drink);
  $drink = new Whip($drink);
 
-echo "您点了：".$drink->getDescription();
+echo "您点了：".$drink->getDescription();  
 echo "<br/>";
 echo "花费：".$drink->cost();
 die;

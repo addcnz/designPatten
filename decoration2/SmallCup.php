@@ -1,13 +1,14 @@
 <?php
+
 /**
- * 具体的装饰类 milk
+ * 
  */
-class Milk extends CondimentDecorate{
+class SmallCup extends CondimentDecorate{
 	/**
 	 * 饮料价格
 	 */
-	public $cost = 3;
-	public $description = "牛奶";
+	public $cost = 9;
+	public $description = "小杯";
 
 	function __construct(Beverage $beverage){
 		$this->beverage = $beverage;

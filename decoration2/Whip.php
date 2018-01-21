@@ -15,7 +15,6 @@ class Whip extends CondimentDecorate{
 	}
 
 	function getDescription(){
-		echo "z";
 		return $this->beverage->getDescription()."+".$this->description;
 	}
 
