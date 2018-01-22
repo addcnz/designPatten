@@ -15,17 +15,23 @@ abstract class Beverage{
 	 */
 	public $cost = 0;
 	
-
+    /**
+    * 大杯large 中杯medium 小杯small
+    */
+    public $size= 'medium';
 
 	function getDescription(){
 		return $this->description;
 	}
-	
-	/**
-	 * 消费逻辑处理
-	 */
+
 	abstract function cost();
 
+    function getSize(){
+        return $this->size;
+    }
 
+    function setSize($size){
+        $this->size = $size;
+    }
 	
 }

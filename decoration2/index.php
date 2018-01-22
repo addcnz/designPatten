@@ -6,8 +6,7 @@ foreach($files as $file){
     if(!preg_match("/^.*\.php$/", $file) || $file==$pathinfo['basename']){
         continue;
     }
-    //echo $pathinfo['dirname']."/".$file."<br/>";
-    include $pathinfo['dirname']."/".$file;
+    include $pathinfo['dirname']."/".$file; //echo $pathinfo['dirname']."/".$file."<br/>";
 }
 
 
