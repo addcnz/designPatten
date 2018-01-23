@@ -16,9 +16,14 @@ abstract class Beverage{
 	public $cost = 0;
 	
     /**
-    * 大杯large 中杯medium 小杯small
+    * 大杯large 中杯medium 超大杯venti
     */
-    public $size= 'medium';
+    public $size= '';
+
+    CONST CUP_TALL = 'tall';
+    CONST CUP_MEDIUM = 'large';
+    CONST CUP_VENTI = 'venti';
+
 
 	function getDescription(){
 		return $this->description;

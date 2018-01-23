@@ -19,9 +19,9 @@ class Soy extends CondimentDecorate{
 	}
 
 	function cost(){
-		if($this->beverage->getSize() == 'small'){
+		if($this->beverage->getSize() == Beverage::CUP_VENTI){
 			$this->cost += 0.10;
-		}else if($this->beverage->getSize() == 'large'){
+		}else if($this->beverage->getSize() == Beverage::CUP_TALL){
 			$this->cost += 0.20;
 		}else{
 			$this->cost += 0.15;
